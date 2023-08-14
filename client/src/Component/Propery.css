@@ -1,0 +1,77 @@
+.property {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 23%;
+  transition: all 1s;
+}
+.property:hover {
+  transform: scale(1.05);
+}
+.property-image {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.p-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  z-index: 10;
+  background-color: rgba(37, 3, 22, 0.361);
+  transition: all 1s;
+}
+
+.property-image:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-content {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  transition: 1s all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.property-image:hover .overlay-content {
+  bottom: 0;
+}
+
+.overlay-content span {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.property-title {
+  color: #888888;
+}
+.price {
+  color: rgb(183, 0, 92);
+}
