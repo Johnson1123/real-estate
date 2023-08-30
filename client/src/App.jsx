@@ -8,6 +8,7 @@ import Property from "./Pages/Property/Property.jsx";
 import Dashboard from "./Pages/Dashboard/Dashboard.jsx";
 import PropertyPage from "./Pages/PropertyPage/PropertyPage.jsx";
 import Login from "./Pages/SignUp/SignUp.jsx";
+import Details from "./Pages/Details/propertyDetails.jsx";
 
 function App() {
   const Layout = () => {
@@ -52,6 +53,10 @@ function App() {
       path: "/Login",
       element: <Login />,
     },
+    {
+      path:"/details",
+      element:<Details/>
+    }
   ]);
   return (
     <div>
